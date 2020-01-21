@@ -7,11 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import {
   MatToolbarModule,
   MatMenuModule,
   MatButtonModule,
+  MatGridListModule,
+  MatCardModule,
 } from '@angular/material';
 
 @NgModule({
@@ -27,7 +28,9 @@ import {
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
