@@ -1,8 +1,14 @@
+.contentContainer{
+    margin:0.5em 2em;
+}
+
 #containerSkills{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap:1.5em;
+    // mat-card{
+    //     margin:0.8em 2em;
+    // }
 }
 
-mat-card{
-    margin:0.8em 2em;
-}
