@@ -12,3 +12,19 @@
     // }
 }
 
+#containerWebGrid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 1em;
+    grid-row-gap:1em;
+}
+
+#containerShowcase{
+    display:flex;
+
+    div{
+        flex:33%;
+        background-color: lightgrey;
+        margin: 3px;
+    }
+}
