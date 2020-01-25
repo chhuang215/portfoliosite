@@ -21,10 +21,11 @@
 
 #containerShowcase{
     display:flex;
-
+    text-align: center;
     div{
         flex:33%;
         background-color: lightgrey;
-        margin: 3px;
+        margin: .3em;
+        padding: .4em;
     }
 }
