@@ -1,6 +1,4 @@
-.contentContainer{
-    margin:0.5em 2em;
-}
+
 
 #containerSkills{
     display: grid;
@@ -28,4 +26,29 @@
         margin: .3em;
         padding: .4em;
     }
+}
+
+.contentContainer{
+    margin:0.5em 2em;
+}
+
+.gridSkill{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit ,  6em);
+    grid-auto-rows: 5em;
+    grid-gap:1em;
+
+    div{
+        @extend.skillBlock
+    }
+}
+
+.skillBlock{
+    border: 1px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    border-radius: .3em;
+    
 }
