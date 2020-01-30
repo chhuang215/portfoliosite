@@ -45,19 +45,10 @@
 .flexSkills{
     display: flex; 
     flex-wrap: wrap;
-    
     padding: 0 -0.5em;
 
     div{
-        border: 1px solid indigo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center  ;
-        border-radius: .3em;
-        width:6em;
-        height:5em;
-        margin: 0.5em 0.5em;
+        @extend .skillBlock
     }
 }
 
@@ -68,9 +59,12 @@
     align-items: center;
     text-align: center  ;
     border-radius: .3em;
+    width:6em;
+    height:5em;
+    margin: 0.5em 0.5em;
     
 }
 
-#skillBlock-Java{
-    // background-color: pink;
-}
+// #skillBlock-Java{
+//     // background-color: pink;
+// }
