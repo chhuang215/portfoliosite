@@ -11,14 +11,16 @@
             <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
             <mat-card-content>
           
-                <div class="gridSkill">
-                
-                    <div> <i style="font-size:3em" class="devicon-java-plain-wordmark colored"></i>Java</div>
+                <div class="flexSkills">
+                    <div *ngFor="let s of skills.progLang" [id]="'skillBlock-' + s" >
+                        <i style="font-size: 2.6em;" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                    <!-- <div> <i style="font-size:3em" class="devicon-java-plain-wordmark colored"></i>Java</div>
                     <div>C/C++</div>
                     <div>C#</div>
                     <div>Python</div>
                     <div>Haskell</div>
-                    <div>VB/VBA</div>
+                    <div>VB/VBA</div> -->
                 </div>
       
                 
@@ -52,7 +54,7 @@
                         </mat-card-header>
                         <mat-card-content>
                             <div class="gridSkill">
-                                <div><i style="font-size: 3em;" class="devicon-html5-plain-wordmark colored"></i>HTML</div>
+                                <div><i style="font-size: 2.6em;" class="devicon-html5-plain-wordmark colored"></i>HTML</div>
                                 <div>Javascript</div>
                                 <div>CSS</div>
                                 <div>PHP</div>

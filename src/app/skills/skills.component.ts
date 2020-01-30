@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  skills = {};
+  skillIcons={};
+  constructor() { 
+    this.skills={
+      progLang:["Java","C/C++","C#","Python","Haskell","VB/VBA"],
+    }
+    this.skillIcons={
+      Java: "devicon-java-plain-wordmark colored"
+    }
+  }
 
   ngOnInit() {
   }
