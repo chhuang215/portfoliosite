@@ -31,16 +31,16 @@
     margin:0.5em 2em;
 }
 
-.gridSkill{
-    display: grid; 
-    grid-template-columns: repeat(auto-fit ,  6em);
-    grid-auto-rows: 5em;
-    grid-gap:1em;
+// .gridSkill{
+//     display: grid; 
+//     grid-template-columns: repeat(auto-fit ,  6em);
+//     grid-auto-rows: 5em;
+//     grid-gap:1em;
 
-    div{
-        @extend.skillBlock
-    }
-}
+//     div{
+//         @extend.skillBlock
+//     }
+// }
 
 .flexSkills{
     display: flex; 

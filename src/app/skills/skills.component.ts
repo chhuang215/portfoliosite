@@ -12,9 +12,11 @@ export class SkillsComponent implements OnInit {
   constructor() { 
     this.skills={
       progLang:["Java","C/C++","C#","Python","Haskell","VB/VBA"],
+      db:["MySQL", "MS Access", "MongoDB / NoSQL"],
     }
     this.skillIcons={
-      Java: "devicon-java-plain-wordmark colored"
+      "Java": "devicon-java-plain-wordmark colored",
+      "HTML": "devicon-html5-plain-wordmark colored",
     }
   }
 
