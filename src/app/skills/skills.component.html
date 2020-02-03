@@ -12,7 +12,7 @@
             <mat-card-content>
                 <div class="flexSkills">
                     <div *ngFor="let s of skills.progLang" [id]="'skillBlock-' + s" >
-                        <i *ngIf="skillIcons[s]!=undefined" style="font-size: 2.6em;" [class]="skillIcons[s]"></i>{{s}}
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined"  [class]="skillIcons[s]"></i>{{s}}
                     </div>
                     <!-- <div> <i style="font-size:3em" class="devicon-java-plain-wordmark colored"></i>Java</div>
                     <div>C/C++</div>
@@ -32,7 +32,7 @@
             <mat-card-content>
                 <div class="flexSkills">
                     <div *ngFor="let s of skills.db" [id]="'skillBlock-' + s" >
-                        <i *ngIf="skillIcons[s]!=undefined" style="font-size: 2.6em;" [class]="skillIcons[s]"></i>{{s}}
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
                     </div>
                 </div>
                 <!-- <div class="flexSkills">
@@ -56,10 +56,9 @@
                         </mat-card-header>
                         <mat-card-content>
                             <div class="flexSkills">
-                                <div>HTML</div>
-                                <div>Javascript</div>
-                                <div>CSS</div>
-                                <div>PHP</div>
+                                <div *ngFor="let s of skills.web.main" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
                             </div>
                         </mat-card-content>
                     </mat-card>
@@ -70,6 +69,11 @@
                         </mat-card-header>
                         <mat-card-content>
                             <div class="flexSkills">
+                                <div *ngFor="let s of skills.web.frameworks" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
+                            </div>
+                            <!-- <div class="flexSkills">
                                 <div >JQuery</div>
                                 <div >Node.js</div>
                                 <div > Angular</div>
@@ -86,7 +90,7 @@
                             <div style="margin-top:10px"></div>
                             <div class="flexSkills" >
                                 <div >Flask</div>
-                            </div>
+                            </div> -->
                         </mat-card-content>
                     </mat-card>
 
@@ -96,8 +100,9 @@
                         </mat-card-header>
                         <mat-card-content>
                             <div class="flexSkills">
-                                <div >REST</div>
-                                <div >SOAP</div>
+                                <div *ngFor="let s of skills.web.architecture" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
                             </div>
                         </mat-card-content>
                     </mat-card>
@@ -108,11 +113,9 @@
                         </mat-card-header>
                         <mat-card-content>
                             <div class="flexSkills">
-                                <div >AJAX</div>
-                                <div >JSON</div>
-                                <div >ECMA</div>
-                                <div >Webpack</div>
-                                <div >Gulp</div>
+                                <div *ngFor="let s of skills.web.other" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined"[class]="skillIcons[s]"></i>{{s}}
+                                </div>
                             </div>
                         </mat-card-content>
                     </mat-card>
@@ -127,9 +130,9 @@
             <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
             <mat-card-content>
                 <div class="flexSkills">
-                    <div >Github</div>
-                    <div >SVN</div>
-                    <div >Bitbucket</div>
+                    <div *ngFor="let s of skills.vcs" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
                 </div>
 
             </mat-card-content>
@@ -142,6 +145,11 @@
             <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
             <mat-card-content>
                 <div class="flexSkills">
+                    <div *ngFor="let s of skills.other" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                </div>
+                <!-- <div class="flexSkills">
                     <div >Virtualization</div>
                     <div >Shell script</div>
                     <div >Docker</div>
@@ -152,7 +160,7 @@
                     <div >Drupal</div>
                     <div >IIS</div>
                     <div>Arduino</div>
-                </div>
+                </div> -->
             </mat-card-content>
         </mat-card>
 
