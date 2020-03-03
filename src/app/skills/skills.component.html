@@ -1,0 +1,184 @@
+
+<div class="contentContainer">
+    <a mat-raised-button color="warn" routerLink=".">Resume download</a>
+
+
+    <div id="containerSkills">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Programming Languages</mat-card-title>
+            </mat-card-header>
+            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+            <mat-card-content>
+                <div class="flexSkills">
+                    <div *ngFor="let s of skills.progLang" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined"  [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                    <!-- <div> <i style="font-size:3em" class="devicon-java-plain-wordmark colored"></i>Java</div>
+                    <div>C/C++</div>
+                    <div>C#</div>
+                    <div>Python</div>
+                    <div>Haskell</div>
+                    <div>VB/VBA</div> -->
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Database</mat-card-title>
+            </mat-card-header>
+            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+            <mat-card-content>
+                <div class="flexSkills">
+                    <div *ngFor="let s of skills.db" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                </div>
+                <!-- <div class="flexSkills">
+                    <div>MySQL</div>
+                    <div>MS Access</div>
+                    <div>MongoDB / NoSQL</div>
+                </div> -->
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card style="grid-column-start: 1; grid-column-end: 3; ">
+            <mat-card-header>
+                <mat-card-title>Web Development</mat-card-title>
+            </mat-card-header>
+            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+            <mat-card-content>
+                <div id="containerWebGrid">
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>Main</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="flexSkills">
+                                <div *ngFor="let s of skills.web.main" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>Frameworks/Libraries</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="flexSkills">
+                                <div *ngFor="let s of skills.web.frameworks" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
+                            </div>
+                            <!-- <div class="flexSkills">
+                                <div >JQuery</div>
+                                <div >Node.js</div>
+                                <div > Angular</div>
+                                <div >Ionic</div>
+                                <div >ReactJS</div>
+                                <div >MeteorJS</div>
+                            </div>
+                            <div style="margin-top:10px"></div>
+                            <div class="flexSkills" >
+                                <div > Twitter Bootstrap</div>
+                                <div >Material Design</div>
+                            </div>
+
+                            <div style="margin-top:10px"></div>
+                            <div class="flexSkills" >
+                                <div >Flask</div>
+                            </div> -->
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>Architecture</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="flexSkills">
+                                <div *ngFor="let s of skills.web.architecture" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>Other</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="flexSkills">
+                                <div *ngFor="let s of skills.web.other" [id]="'skillBlock-' + s" >
+                                    <i class="skillIcon" *ngIf="skillIcons[s]!=undefined"[class]="skillIcons[s]"></i>{{s}}
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Version Control</mat-card-title>
+            </mat-card-header>
+            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+            <mat-card-content>
+                <div class="flexSkills">
+                    <div *ngFor="let s of skills.vcs" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Other</mat-card-title>
+            </mat-card-header>
+            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+            <mat-card-content>
+                <div class="flexSkills">
+                    <div *ngFor="let s of skills.other" [id]="'skillBlock-' + s" >
+                        <i class="skillIcon" *ngIf="skillIcons[s]!=undefined" [class]="skillIcons[s]"></i>{{s}}
+                    </div>
+                </div>
+                <!-- <div class="flexSkills">
+                    <div >Virtualization</div>
+                    <div >Shell script</div>
+                    <div >Docker</div>
+                    <div >.NET Framework</div>
+                    <div >AWS</div>
+                    <div >Unix</div>
+                    <div >Unit Testing</div>
+                    <div >Drupal</div>
+                    <div >IIS</div>
+                    <div>Arduino</div>
+                </div> -->
+            </mat-card-content>
+        </mat-card>
+
+    </div> <!--containerSkills end-->
+
+    <div id="containerShowcase">
+        <div>
+            <h2>Software</h2>
+            <img src="../../assets/placeholder.jpg" alt="">
+        </div>
+        <div>
+            <h2>Raspberry Pi</h2>
+            <img src="../../assets/placeholder.jpg" alt="">
+        </div>
+        <div>
+            <h2>Arduino</h2>
+            <img src="../../assets/placeholder.jpg" alt="">
+        </div>
+    </div>
+
+</div>

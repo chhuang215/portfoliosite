@@ -1,0 +1,74 @@
+
+
+#containerSkills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap:1.5em;
+    // mat-card{
+    //     margin:0.8em 2em;
+    // }
+}
+
+#containerWebGrid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 0.7em;
+}
+
+#containerShowcase{
+    display:flex;
+    text-align: center;
+    div{
+        flex:33%;
+        background-color: lightgrey;
+        margin: .3em;
+        padding: .4em;
+    }
+}
+
+.contentContainer{
+    margin:0.5em 2em;
+}
+
+// .gridSkill{
+//     display: grid; 
+//     grid-template-columns: repeat(auto-fit ,  6em);
+//     grid-auto-rows: 5em;
+//     grid-gap:1em;
+
+//     div{
+//         @extend.skillBlock
+//     }
+// }
+
+.flexSkills{
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 0 -0.5em;
+
+    div{
+        @extend .skillBlock
+    }
+}
+
+.skillBlock{
+    border: 1px solid indigo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    border-radius: .3em;
+    width:6.1em;
+    height:3.2em;
+    margin: 0.5em 0.5em;
+    
+}
+
+i{
+    font-size: 2.6em
+}
+
+// #skillBlock-Java{
+//     // background-color: pink;
+// }
