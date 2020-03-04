@@ -30,10 +30,17 @@ export class SkillsComponent implements OnInit {
     }
     this.skillIcons={
       "Java": "devicon-java-plain-wordmark colored",
-      "HTML": "devicon-html5-plain-wordmark colored",
       "C/C++": "devicon-c-plain-wordmark colored",
       "C#":"devicon-csharp-plain colored",
       "Python":"devicon-python-plain-wordmark colored",
+      "MySQL":"devicon-mysql-plain-wordmark colored",
+      "MongoDB / NoSQL":"devicon-mongodb-plain-wordmark colored",
+      "HTML": "devicon-html5-plain-wordmark colored",
+      "Javascript":"devicon-javascript-plain colored",
+      "CSS":"devicon-css3-plain-wordmark colored",
+      "PHP":"devicon-php-plain colored",
+      "JQuery":"devicon-jquery-plain-wordmark colored",
+      "Node.js":"devicon-nodejs-plain-wordmark colored",
       
 
     }
