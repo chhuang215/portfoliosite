@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  skills = {};
-  skillIcons={};
+  public skills:any = {};
+  public skillIcons={};
   constructor() { 
     this.skills={
       progLang:["Java","C/C++","C#","Python","Haskell","VB/VBA"],
@@ -44,6 +44,7 @@ export class SkillsComponent implements OnInit {
       
 
     }
+
   }
 
   ngOnInit() {
